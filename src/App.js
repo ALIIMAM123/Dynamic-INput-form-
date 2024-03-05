@@ -21,10 +21,18 @@ export default function App() {
 
   console.log(usersData);
   const handleSubmit = () => {
-    usersData.map((eachItem, index) => eachItem[0].username === '');
-    // setError(true);
+    if (
+      usersData[0].username === '' ||
+      usersData[0].country === '' ||
+      usersData[0].mobileNo === ''
+    ) {
+      setError(true);
+      return;
+    } else {
+      console.log(usersData, 'submitted');
+    }
+   
 
-    console.log(usersData, 'submitted');
   };
 
   return (
@@ -56,7 +64,6 @@ export default function App() {
                 type="number"
                 name="mobileNo"
                 value={eachItem.mobileNo}
-                onChange={handleChangeInput}
                 placeholder="Enter Mobile Number Here"
                 onChange={(e) => handleChangeInput(e, index, 'mobileNo')}
               />
