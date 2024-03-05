@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.main-container {
+  /* height: 100vh; */
+  background-color: rgb(131, 161, 165);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.main-container > input {
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+}
+.main-container > select {
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.submit-btn {
+  /* position: absolute; */
+  margin: 20px;
+  padding: 10px;
+  width: calc(100% - 40px);
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgb(11, 12, 12);
+  color: white;
+  font-size: large;
+}
+.add-more {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(110, 106, 106);
+  color: white;
+  border: none;
+}
